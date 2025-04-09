@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando el arte de la fotografía</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <h1 id="titulo-principal">Explorando el arte de la fotografía</h1>
+    </header>
+
+    <nav id="nav">
+        <ul>
+            <li><a href="#inicio" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+            <li><a href="#museo" onclick="mostrarSeccion('museo-content')">Museo</a></li>
+            <li><a href="#tecnicas" onclick="mostrarSeccion('tecnicas')">Técnicas</a></li>
+            <li><a href="#conceptos" onclick="mostrarSeccion('conceptos')">Conceptos</a></li>
+            <li><a href="#galeria" onclick="mostrarSeccion('galeria-content')">Galería</a></li>
+            <li><a href="#contacto" onclick="mostrarSeccion('contacto-content')">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <!-- Sección Inicio -->
+        <section id="inicio" class="seccion-principal">
+            <h2>Bienvenido a mi proyecto fotográfico</h2>
+            <p>Explora conmigo el maravilloso mundo de la fotografía.</p>
+        </section>
+
+        <!-- Museo Fotográfico -->
+        <section id="museo-content" class="museo-container" style="display:none;">
+            <h2>Museo Fotográfico</h2>
+            
+            <!-- Sección 1: Leyes de Composición -->
+            <div class="museo-seccion">
+                <h3>Leyes de Composición</h3>
+                <div class="museo-grid">
+                    <div class="museo-item">
+                        <img src="assets/mascara1.jpg" alt="Máscara 1" onclick="ampliarImagen(this)">
+                        <p>Encudre 1</p>
+                        <button class="btn-descarga" onclick="descargarImagen('mascara1.jpg')">↓ Descargar</button>
+                    </div>
+                    <div class="museo-item">
+                        <img src="assets/mascara2.jpg" alt="Máscara 2" onclick="ampliarImagen(this)">
+                        <p>Encudre 2</p>
+                        <button class="btn-descarga" onclick="descargarImagen('mascara2.jpg')">↓ Descargar</button>
+                    </div>
+                    <div class="museo-item">
+                        <img src="assets/mascara3.jpg" alt="Máscara 3" onclick="ampliarImagen(this)">
+                        <p>Encudre 3</p>
+                        <button class="btn-descarga" onclick="descargarImagen('mascara3.jpg')">↓ Descargar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección 2: Técnicas de Iluminación -->
+            <div class="museo-seccion">
+                <h3>Técnicas de Iluminación</h3>
+                <div class="museo-grid">
+                    <div class="museo-item">
+                        <img src="assets/iluminacion1.jpg" alt="Iluminación 1" onclick="ampliarImagen(this)">
+                        <button class="btn-descarga" onclick="descargarImagen('iluminacion1.jpg')">↓ Descargar</button>
+                    </div>
+                    <div class="museo-item">
+                        <img src="assets/iluminacion2.jpg" alt="Iluminación 2" onclick="ampliarImagen(this)">
+                        <button class="btn-descarga" onclick="descargarImagen('iluminacion2.jpg')">↓ Descargar</button>
+                    </div>
+                    <div class="museo-item">
+                        <img src="assets/iluminacion3.jpg" alt="Iluminación 3" onclick="ampliarImagen(this)">
+                        <button class="btn-descarga" onclick="descargarImagen('iluminacion3.jpg')">↓ Descargar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección 3: Planos -->
+            <div class="museo-seccion">
+                <h3>Planos Fotográficos</h3>
+                <div class="museo-grid">
+                    <div class="museo-item">
+                        <img src="assets/plano1.jpg" alt="Plano 1" onclick="ampliarImagen(this)">
+                        <button class="btn-descarga" onclick="descargarImagen('plano1.jpg')">↓ Descargar</button>
+                    </div>
+                    <div class="museo-item">
+                        <img src="assets/plano2.jpg" alt="Plano 2" onclick="ampliarImagen(this)">
+                        <button class="btn-descarga" onclick="descargarImagen('plano2.jpg')">↓ Descargar</button>
+                    </div>
+                    <div class="museo-item">
+                        <img src="assets/plano3.jpg" alt="Plano 3" onclick="ampliarImagen(this)">
+                        <button class="btn-descarga" onclick="descargarImagen('plano3.jpg')">↓ Descargar</button>
+                    </div>
+                    <div class="museo-item">
+                        <img src="assets/plano4.jpg" alt="Plano 4" onclick="ampliarImagen(this)">
+                        <button class="btn-descarga" onclick="descargarImagen('plano4.jpg')">↓ Descargar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Técnicas -->
+        <section id="tecnicas" class="seccion-principal" style="display:none;">
+            <h2>Técnicas Fotográficas Esenciales</h2>
+            <ul class="lista-tecnicas">
+                <li><strong>Regla de los tercios:</strong> Divide la imagen en 9 partes iguales</li>
+                <li><strong>Balance de blancos:</strong> Ajusta los colores según la iluminación</li>
+                <li><strong>Profundidad de campo:</strong> Controla qué áreas están enfocadas</li>
+                <li><strong>Velocidad de obturación:</strong> Congela o muestra movimiento</li>
+            </ul>
+        </section>
+
+        <!-- Sección Conceptos -->
+        <section id="conceptos" class="seccion-principal" style="display:none;">
+            <h2>Conceptos Básicos de Fotografía</h2>
+            <article class="concepto">
+                <h3>1. Cómo funcionan las luces</h3>
+                <p>La luz es el elemento más importante en la fotografía.</p>
+            </article>
+            <article class="concepto">
+                <h3>2. Ángulos fotográficos</h3>
+                <p>El ángulo cambia completamente la percepción del sujeto.</p>
+            </article>
+        </section>
+
+        <!-- Aside Arte -->
+        <aside id="arte" class="recuadro-arte" style="display:none;">
+            <h2>Recursos sobre Arte</h2>
+            <a href="https://concepto.de/arte/" target="_blank">¿Qué es el arte? - Concepto.de</a>
+            <a href="https://fundacionbotin.org/" target="_blank">Fundación Botín</a>
+        </aside>
+
+        <!-- Galería -->
+        <section id="galeria-content" class="galeria-container" style="display:none;">
+            <h2>Galería de Fotos</h2>
+            <div class="album-fotos">
+                <figure class="foto-album">
+                    <img src="assets/botella1.jpg" alt="Botella 1">
+                    <figcaption>Botella 1</figcaption>
+                </figure>
+                <figure class="foto-album">
+                    <img src="assets/botella2.jpg" alt="Botella 2">
+                    <figcaption>Botella 2</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto-content" class="contacto-container" style="display:none;">
+            <h2>Contacto</h2>
+            <div class="contacto-info">
+                <div>
+                    <p><strong>Nombre:</strong> Denzel Valderrama Gómez</p>
+                    <p><strong>Correo:</strong> denzelvalderramagomez@gmail.com</p>
+                    <p><strong>Institución:</strong> Colegio Skolmi</p>
+                </div>
+                <img src="assets/denzel_foto.jpg" alt="Mi foto" class="foto-perfil">
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>© 2025 Proyecto de Fotografía - Semana 7</p>
+    </footer>
+
+    <script>
+        // Función para mostrar/ocultar secciones
+        function mostrarSeccion(idSeccion) {
+            // Oculta todas las secciones
+            document.querySelectorAll('.seccion-principal, .recuadro-arte, .galeria-container, .contacto-container, .museo-container').forEach(seccion => {
+                seccion.style.display = 'none';
+            });
+            
+            // Muestra la sección seleccionada
+            if(document.getElementById(idSeccion)) {
+                document.getElementById(idSeccion).style.display = 'block';
+            }
+        }
+        
+        // Mostrar inicio por defecto
+        document.addEventListener('DOMContentLoaded', function() {
+            mostrarSeccion('inicio');
+        });
+
+        // Función para ampliar imágenes
+        function ampliarImagen(img) {
+            const modal = document.createElement('div');
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0,0,0,0.9)';
+            modal.style.zIndex = '2000';
+            modal.style.display = 'flex';
+            modal.style.justifyContent = 'center';
+            modal.style.alignItems = 'center';
+            
+            const imagenAmpliada = document.createElement('img');
+            imagenAmpliada.src = img.src;
+            imagenAmpliada.style.maxHeight = '90vh';
+            imagenAmpliada.style.maxWidth = '90vw';
+            
+            modal.appendChild(imagenAmpliada);
+            modal.onclick = () => document.body.removeChild(modal);
+            
+            document.body.appendChild(modal);
+        }
+
+        // Función para descargar imágenes
+        function descargarImagen(nombreArchivo) {
+            const link = document.createElement('a');
+            link.href = `assets/${nombreArchivo}`;
+            link.download = nombreArchivo;
+            link.click();
+        }
+    </script>
+</body>
+</html>
